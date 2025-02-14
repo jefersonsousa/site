@@ -1,0 +1,169 @@
+@charset "utf-8";
+@font-face{
+	font-family: 'balsamic';
+	src: url("../_fonts/BalsamiqSans-Regular.ttf");
+}
+@font-face{
+	font-family: 'oswald';
+	src: url("../_fonts/Oswald-Regular.ttf");
+}
+
+body{
+	background-color: #dddddd; /* rgb(150,200,255)*/
+	/* background-image: url(_image/fundo1.jpg);*/
+	color: rgba(0,0,0,1);
+}
+header#cabecalho img#icone { /* deslocamento da imagem de cima*/
+	position: absolute;
+	left: 10px;
+	top: 180px;
+
+}
+
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 162px;
+	background: url("../_image/fundo3.jpg") no-repeat 0px 50px;
+}
+
+header#cabecalho h1{
+	font-family: 'oswald', sans-serif;
+	font-size: 31pt;
+	color: #606060;
+	text-align: right;
+	text-shadow: 1px 1px 1px rgba(0,0,0, .6);
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+header#cabecalho h2{
+	font-family: 'balsamic', sans-serif;
+	font-size: 14pt;
+	color: #888888;
+	text-align: right;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+div#interface{ /* configuração da div interface */
+	width: 900px;
+	background-color: #ffffff;
+	margin: -20px auto 0px auto; /* margem da div interface*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* SOMBRA */
+	padding: 10px ;  /* 10px 10px 10px 10px = 10px; texto dentro do objeto*/
+}
+
+			/* Imagens com Legendas */
+figure.legendafoto {
+	position: relative;
+	border: 8px solid white;	
+	box-shadow: 1px 1px  4px black;
+}
+
+figure.legendafoto img {
+	posotion: relative;
+	width: 100%;
+	height: 100%;
+}
+
+figure.legendafoto figcaption{
+	transition: opacity 1s;
+	opacity: 0;
+	position: relative;
+	top: 5px;
+
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 1px;
+	box-sizing: border-box;
+}
+
+figure.legendafoto:hover figcaption{
+	opacity: 0.8;
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0px;
+	left: 300px;
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 10px;
+	transition: background-color 1s;
+}
+
+nav#menu{
+	display: block;
+}
+
+nav#menu h1{
+	display: none;	
+}
+
+nav#menu li:hover{
+	background-color: #606060;
+}
+
+nav#menu a{
+	color: black;
+	text-decoration: none;
+}
+
+nav#menu a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+section#corpo{
+	display: block;  /*para ser mostrado como um bloco*/
+	width: 500px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-bottom: 1px solid #606060;
+}
+
+aside#lateral{
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+	display: block;
+	width: 300px;
+	float: right; /*somente com os objetos configurados para serem mostrados em bloco*/
+}
+
+footer#rodape{
+	display: block;
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+	font-family: 'oswald', sans-serif;
+	text-align: center;
+}
+
+table#tabela1{
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabela1 td{
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #606060;
+	padding: 10px;
+}
